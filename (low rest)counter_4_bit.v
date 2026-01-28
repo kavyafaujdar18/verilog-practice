@@ -5,8 +5,8 @@ module counter_4_bit(
 );
   always @(posedge clk) begin
     if (rst)
-        count = 4'b0;
+        count <= 4'b0;
     else
-       count = count + 1;
+       count <= count + 1;
   end
 endmodule
